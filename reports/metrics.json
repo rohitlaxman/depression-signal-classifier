@@ -1,0 +1,54 @@
+{
+  "accuracy": 0.7096774193548387,
+  "macro_f1": 0.7096164073546993,
+  "weighted_f1": 0.7096164073546992,
+  "test_rows": 992,
+  "training_rows_after_cleaning": 48432,
+  "training_rows_removed_due_to_test_overlap": 496,
+  "labels": [
+    "Anxiety",
+    "Depression",
+    "Normal",
+    "Suicidal"
+  ],
+  "classification_report": {
+    "Anxiety": {
+      "precision": 0.7453874538745388,
+      "recall": 0.8145161290322581,
+      "f1-score": 0.7784200385356455,
+      "support": 248.0
+    },
+    "Depression": {
+      "precision": 0.5663082437275986,
+      "recall": 0.6370967741935484,
+      "f1-score": 0.5996204933586338,
+      "support": 248.0
+    },
+    "Normal": {
+      "precision": 0.8032786885245902,
+      "recall": 0.7903225806451613,
+      "f1-score": 0.7967479674796748,
+      "support": 248.0
+    },
+    "Suicidal": {
+      "precision": 0.7474747474747475,
+      "recall": 0.5967741935483871,
+      "f1-score": 0.6636771300448431,
+      "support": 248.0
+    },
+    "accuracy": 0.7096774193548387,
+    "macro avg": {
+      "precision": 0.7156122834003686,
+      "recall": 0.7096774193548387,
+      "f1-score": 0.7096164073546993,
+      "support": 992.0
+    },
+    "weighted avg": {
+      "precision": 0.7156122834003688,
+      "recall": 0.7096774193548387,
+      "f1-score": 0.7096164073546992,
+      "support": 992.0
+    }
+  },
+  "evaluation_note": "Evaluated on the supplied test file after removing normalized text overlaps from training. This does not guarantee independence across source datasets. Results are not clinical validation and must not be used for diagnosis or individual risk assessment."
+}
