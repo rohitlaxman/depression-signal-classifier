@@ -33,11 +33,23 @@ It is an educational research prototype, not a clinical diagnostic or risk-asses
 
 ## Dataset
 
-The project uses the Mental Health Text Classification Dataset (4-Class) published on Hugging Face:
+This project uses the [Mental Health Text Classification Dataset (4-Class)](https://huggingface.co/datasets/ourafla/Mental-Health_Text-Classification_Dataset) from Hugging Face.
 
-https://huggingface.co/datasets/ourafla/Mental-Health_Text-Classification_Dataset
+The CSV files used by this project are:
 
-The dataset combines previously published text corpora. Its labels are derived from source datasets and are not equivalent to clinical diagnoses.
+- `data/mental_heath_unbanlanced.csv` — training data containing `Unique_ID`, `text`, and `status` columns.
+- `data/mental_health_combined_test.csv` — test data containing `text` and `status` columns.
+
+The dataset files are excluded from Git because of their size. To reproduce the experiments:
+
+1. Open the Hugging Face dataset page linked above.
+2. Download the corresponding training and test CSV files.
+3. Place them in the project's `data/` directory using the exact filenames listed above.
+4. Run the evaluation command described below.
+
+The training and evaluation scripts expect the relevant CSV files to contain `text` and `status` columns.
+
+The dataset combines previously published text corpora. Its labels are dataset categories, not verified clinical diagnoses. Review the dataset's licence and attribution requirements before redistribution.
 
 ## Evaluation
 
